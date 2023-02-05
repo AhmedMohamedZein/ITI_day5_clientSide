@@ -13,12 +13,12 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="./resources/source.css">
     </head>
-    <body>
-
+    <body style="background-color: #F0F0F0;">
+        <!--Nav bar-->
         <div class="container-fluid">
-            <div class="row bg-light">
+            <div class="row">
                 <h3 class="offset-1 col-11 offset-md-2 col-md-10 pb-4 pt-5  fw-bold">The FLower Blog</h3>
-                <nav class="nav col-12 justify-content-md-evenly justify-content-sm-center" style="background-color:#222;">
+                <nav class="nav col-12  justify-content-center justify-content-md-evenly" style="background-color:#222;">
                     <a class="nav-link" aria-current="page" href="#">Blog</a>
                     <a class="nav-link" href="#">About</a>
                     <a class="nav-link" href="#">Archives</a>
@@ -27,16 +27,21 @@
                 </nav>
             </div>  
         </div>
-        <div class="container mt-4">    
-                <div class="card offset-0 col-12 offset-md-2 col-md-8">
-                    <img src="./resources/intro_flower.png" alt="intro_flower"class="card-img img-fluid" style="min-height: 280px;">
-                    <div class="card-img-overlay text-light col-12 p-md-5">
-                      <h5 class="card-title fs-3">Do you love flowers as</br> much as we do?</h5>
-                      <p class="card-text pt-3"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </br>sed do eiusmod tempor incididunt ut labore et dolore</br> magna aliqua. Ut enim ad minim veniam, quis nostrud</br> exercitation ullamco laboris nisi ut.</small></p>
-                    </div>
+        <!--Main Photo-->
+        <div class="container mt-4">
+            <div class="card offset-0 col-12 offset-md-2 col-md-8">
+                <img src="./resources/intro_flower.png" alt="intro_flower"class="card-img img-fluid" style="min-height: 280px;">
+                <div class="card-img-overlay text-light col-12 p-md-5">
+                  <h5 class="card-title fs-3">Do you love flowers as</br> much as we do?</h5>
+                  <p class="card-text pt-3"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </br>sed do eiusmod tempor incididunt ut labore et dolore</br> magna aliqua. Ut enim ad minim veniam, quis nostrud</br> exercitation ullamco laboris nisi ut.</small></p>
                 </div>
-                <div class="row">
-                    <h3 class="offset-0 col-12 mt-3 fw-bold">This is the title of a blog post</h3>
+            </div>
+        </div>
+        <!--Main Containt-->
+        <div class="container mt-4">    
+            <div class="row">
+                <main class="row offset-0 col-12 mt-3 offset-md-2 col-md-5">
+                    <h3 class="offset-0 col-12  fw-bold">This is the title of a blog post</h3>
                     <p  class="offset-0 col-12 mt-2 fst-italic text-muted">Posted on June 29th 2009 by 
                         <a href="#" class="link-secondary">Mads Kjaer</a>-<a href="#" class="link-secondary"> 3 comments</a>
                     </p>
@@ -47,10 +52,10 @@
                         Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. 
                         Sed ac nisl sed enim consequat porttitor.
                     </p>
-                    <img src="./resources/flower.png" alt="flower" class="offset-0 col-12">
+                    <img src="./resources/flower.png" height="200vh" alt="flower" class="offset-0 col-12">
                     <p class="offset-0 col-12 mt-5 fst-italic">This is a beautiful flower</p>
 
-                    <p class="offset-0 col-12 mt-3 border-bottom">
+                    <p class="offset-0 col-12 mt-3 pb-4 border-bottom">
                         Pellentesque ut sapien arcu, egestas mollis massa.
                         Fusce lectus leo, fringilla at aliquet sit amet, volutpat non erat. 
                         Aenean molestie nibh vitae turpis venenatis vel accumsan nunc tincidunt. 
@@ -71,13 +76,13 @@
                         Aenean id magna neque. Sed rhoncus aliquet viverra.
                     </p>
                     <h3 class="offset-0 col-12 mt-3 fw-bold">Comments</h3>
-                    <div class="accordion offset-0 col-12 border-bottom" id="accordionExample">
+                    <div class="accordion offset-0 col-12 pb-4 border-bottom" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <a href="#" class="link-dark">George Washington</a> 
                                 <diV class="w-50"></diV>
-                                <div>June 29th 2009<br/> at 23:35</div>  
+                                <div>June 29th 2009 at 23:35</div>  
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -91,7 +96,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <a href="#" class="link-dark">Benjamin Franklin</a> 
                                 <diV class="w-50"></diV>
-                                <div>June 29th 2009<br/> at 23:40</div>  
+                                <div>June 29th 2009 at 23:40</div>  
                             </button>
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -103,9 +108,9 @@
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <a href="#" class="link-dark">Barack Obama</a> 
+                                <a href="#" class="link-dark">Barack Obama  </a> 
                                 <diV class="w-50"></diV>
-                                <div>June 29th 2009<br/>at 23:59</div> 
+                                <div>June 29th 2009 at 23:59</div> 
                             </button>
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -114,8 +119,7 @@
                             </div>
                           </div>
                         </div>
-                    </div>
-                    
+                    </div>            
                     <h3 class="offset-0 col-12 mt-3 fw-bold">Post a comment</h3>
                     <form action="https://www.linkedin.com/in/ahmedmohamedzein/" class="offset-0 col-12 mt-3">
                         <div class="mb-3">
@@ -136,12 +140,45 @@
                         </div>
                         <button type="submit" class="btn btn-outline-success">Post comment</button>
                     </form>
-                </div>
+                </main>
+                <aside class="row d-none d-md-block offset-md-1 col-md-4 mt-3 border-start">
+                    <div class="card mb-3 border-bottom-0" style="width: 18rem; background-color: #F0F0F0;" >
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold"> Categories </h5>
+                          <p class="card-text">
+                            <ul style="list-style: none;">
+                               <a href="#" class="link-secondary"> <li>Lorem ipsum dolor</li></a>
+                               <a href="#" class="link-secondary"><li>Sit amet consectetur</li></a> 
+                               <a href="#" class="link-secondary"><li>Adipisicing elit sed</li></a> 
+                               <a href="#" class="link-secondary"><li>Do eiusmod tempor</li></a> 
+                               <a href="#" class="link-secondary"><li>Incididunt ut labore</li></a> 
+                            </ul>              
+                          </p>          
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-bottom-0" style="width: 18rem; background-color: #F0F0F0;">
+                        <div class="card-body"> 
+                          <h5 class="card-title fw-bold"> Archives </h5>
+                          <p class="card-text">
+                            <ul style="list-style: none;">
+                               <a href="#" class="link-secondary"> <li>December 2008</li></a>
+                               <a href="#" class="link-secondary"><li>January 2009</li></a> 
+                               <a href="#" class="link-secondary"><li>February 2009</li></a> 
+                               <a href="#" class="link-secondary"><li>March 2009</li></a> 
+                               <a href="#" class="link-secondary"><li>April 2009</li></a>
+                               <a href="#" class="link-secondary"><li>May 2009</li></a> 
+                               <a href="#" class="link-secondary"><li>June 2009</li></a> 
+                            </ul>              
+                          </p>          
+                        </div>
+                    </div>  
+                </aside>
+            </div>
         </div>                
-        
-        <div class="container-fluid mt-4" style="background-color: #222;">
+        <!--Footer-->
+        <footer class="container-fluid mt-4" style="background-color: #222;">
             <div class="row gap-3">
-                <div class="offset-0 col-12">
+                <div class="offset-0 col-12 offset-md-2 col-md-3">
                   <div class="card border-0">
                     <div class="card-body" style="background-color: #222;">
                       <h5 class="card-title text-light">About</h5>
@@ -149,7 +186,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="offset-0 col-12">
+                <div class="offset-0 col-12 offset-md-0 col-md-2">
                   <div class="card border-0">
                     <div class="card-body" style="background-color: #222;">
                       <h5 class="card-title text-light">Blogroll</h5>
@@ -165,7 +202,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="offset-0 col-12">
+                <div class="offset-0 col-12 col-md-4">
                     <div class="card border-0">
                       <div class="card-body" style="background-color: #222;">
                         <h5 class="card-title text-light">Popular</h5>
@@ -185,7 +222,7 @@
                     </div>
                   </div>
               </div>
-        </div>
+        </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
